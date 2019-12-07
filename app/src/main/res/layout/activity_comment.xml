@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_comment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_105"
+        android:layout_margin="@dimen/dp_margin_10"
+        android:background="@drawable/index_item_bg">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/order_image"
+            android:layout_width="@dimen/layout_85"
+            android:layout_height="@dimen/layout_85"
+            android:layout_margin="@dimen/dp_margin_10" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_margin_10"
+            android:layout_marginBottom="@dimen/dp_margin_10"
+            android:layout_toRightOf="@+id/order_image">
+
+            <TextView
+                android:id="@+id/order_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_margin_10"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_12" />
+
+            <TextView
+                android:id="@+id/order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/color_f06"
+                android:textSize="@dimen/sp_text_14" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_80"
+        android:layout_below="@+id/layout_comment"
+        android:layout_marginLeft="@dimen/dp_margin_10"
+        android:layout_marginTop="@dimen/dp_margin_10"
+        android:layout_marginRight="@dimen/dp_margin_10"
+        android:background="@drawable/comment_bg"
+        android:gravity="top"
+        android:hint="请在此写下你对商品的评价"
+        android:padding="@dimen/dp_margin_5"
+        android:textSize="@dimen/sp_text_14" />
+
+    <GridView
+        android:id="@+id/comment_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:columnWidth="80dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4" />
+
+
+    <RelativeLayout
+        android:id="@+id/layout_comment_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_gridview"
+        android:layout_marginLeft="@dimen/dp_margin_10"
+        android:layout_marginTop="@dimen/dp_margin_10">
+
+        <ImageView
+            android:id="@+id/comment_circle"
+            android:layout_width="@dimen/dp_margin_15"
+            android:layout_height="@dimen/dp_margin_15"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shop_car_cricle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_margin_5"
+            android:layout_toRightOf="@+id/comment_circle"
+            android:text="同步到圈子"
+            android:textColor="@color/color666"
+            android:textSize="@dimen/sp_text_12" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_comment_circle"
+        android:layout_marginLeft="@dimen/dp_margin_10"
+        android:layout_marginTop="@dimen/layout_80"
+        android:layout_marginRight="@dimen/dp_margin_10"
+        android:background="@drawable/shop_car_bg"
+        android:text="发表"
+        android:textColor="@color/colorFFF"
+        android:textSize="@dimen/sp_text_14"
+
+        />
+</RelativeLayout>

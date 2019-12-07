@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/banner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_165" />
+
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/xbanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_150"
+        android:layout_marginTop="@dimen/dp_margin_15"
+        app:isClipChildrenMode="true"
+
+        />
+</RelativeLayout>

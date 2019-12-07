@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+
+    <RelativeLayout
+        android:id="@+id/shop_car_circle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_105">
+
+        <ImageView
+            android:id="@+id/iv_cricle"
+            android:layout_width="@dimen/dp_margin_15"
+            android:layout_height="@dimen/dp_margin_15"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_margin_10"
+            android:src="@drawable/shop_car_cricle" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_105"
+            android:layout_margin="@dimen/dp_margin_10"
+            android:layout_toRightOf="@+id/iv_cricle"
+            android:background="@drawable/index_item_bg">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/shop_car_image"
+                android:layout_width="@dimen/layout_85"
+                android:layout_height="@dimen/layout_85"
+                android:layout_margin="@dimen/dp_margin_10" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_margin_10"
+                android:layout_marginBottom="@dimen/dp_margin_10"
+                android:layout_toRightOf="@+id/shop_car_image">
+
+                <TextView
+                    android:id="@+id/shop_car_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_margin_10"
+                    android:textColor="@color/color666"
+                    android:textSize="@dimen/sp_text_12"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    />
+
+                <TextView
+                    android:id="@+id/shop_car_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/color_f06"
+                    android:textSize="@dimen/sp_text_14" />
+
+                <com.ming.weidushop.view.ShopAddView
+                    android:id="@+id/shop_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

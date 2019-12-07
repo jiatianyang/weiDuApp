@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:id="@+id/order_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_100"
+        android:layout_margin="@dimen/dp_margin_10"
+        android:background="@drawable/index_item_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_margin_10"
+        android:paddingRight="@dimen/dp_margin_10" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/order_head"
+        />
+    <com.ming.weidushop.view.LayoutDataNull
+        android:id="@+id/layout_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/order_head"
+        android:background="@color/colorFFF"
+        />
+</RelativeLayout>

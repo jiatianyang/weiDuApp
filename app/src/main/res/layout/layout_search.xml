@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_50">
+
+        <ImageView
+            android:id="@+id/search_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_margin_10"
+            android:padding="@dimen/dp_margin_5"
+            android:focusable="false"
+            android:src="@drawable/common_btn_menu" />
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_margin_10"
+            android:layout_marginRight="@dimen/dp_margin_10"
+            android:layout_toLeftOf="@+id/tv_serach"
+            android:layout_toRightOf="@id/search_setting"
+            android:background="@drawable/shape_search_bg"
+            android:hint="请输入要搜索的商品"
+            android:paddingLeft="@dimen/dp_margin_5"
+            android:textColor="@color/color_ccc"
+            android:textSize="@dimen/sp_text_12" />
+
+        <ImageView
+            android:id="@+id/serach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_margin_10"
+            android:src="@drawable/index_seach"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_serach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_margin_10"
+            android:text="搜索"
+            android:textColor="@color/color666"
+            android:padding="@dimen/dp_margin_5"
+            android:textSize="@dimen/sp_text_14" />
+    </RelativeLayout>
+
+</RelativeLayout>

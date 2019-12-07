@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ming.weidushop.view.SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.abner.ming.base.refresh.recy.XRecyclerView
+        android:id="@+id/xrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchview"
+        android:layout_marginLeft="@dimen/dp_margin_10" />
+
+    <com.ming.weidushop.view.LayoutDataNull
+        android:id="@+id/layout_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchview"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_margin_50"
+            android:background="@color/color_4f4" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_list_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_recycler"
+            android:background="@color/color_5d5" />
+    </RelativeLayout>
+</RelativeLayout>

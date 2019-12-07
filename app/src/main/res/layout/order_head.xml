@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/order_image"
+            android:layout_width="@dimen/layout_40"
+            android:layout_height="@dimen/layout_40"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/order_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_margin_5"
+            android:textColor="@color/color666"
+            android:textSize="@dimen/sp_text_12" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

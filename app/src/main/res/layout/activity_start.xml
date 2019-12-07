@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/start_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/start_0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_margin_30"
+        android:layout_marginTop="@dimen/dp_margin_30"
+        android:layout_marginRight="@dimen/dp_margin_10"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_margin_30"
+            android:layout_height="@dimen/dp_margin_30"
+            android:layout_toLeftOf="@id/tv_click"
+            android:layout_marginRight="@dimen/dp_margin_10"
+            android:background="@drawable/circle_base">
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_14" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="跳过"
+            android:textSize="@dimen/sp_text_16"
+            android:textColor="@color/colorFFF"
+            android:layout_centerVertical="true"
+
+            />
+    </RelativeLayout>
+</RelativeLayout>

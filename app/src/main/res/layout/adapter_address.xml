@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_margin_20"
+        android:layout_marginTop="@dimen/dp_margin_10"
+        android:layout_marginRight="@dimen/dp_margin_20"
+        android:background="@drawable/index_item_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_margin_10"
+        android:paddingRight="@dimen/dp_margin_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_margin_10">
+
+            <TextView
+                android:id="@+id/address_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_14" />
+
+            <TextView
+                android:id="@+id/address_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_12" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_all_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_margin_10"
+            android:textColor="@color/color666"
+            android:textSize="@dimen/sp_text_12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_1"
+            android:layout_marginTop="@dimen/dp_margin_10"
+            android:background="@color/colorede" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_margin_50">
+
+            <ImageView
+                android:id="@+id/iv_cricle"
+                android:layout_width="@dimen/dp_margin_15"
+                android:layout_height="@dimen/dp_margin_15"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shop_car_cricle" />
+
+            <TextView
+                android:id="@+id/tv_cricle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_margin_5"
+                android:layout_toRightOf="@id/iv_cricle"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_12" />
+
+            <TextView
+                android:id="@+id/address_change"
+                android:layout_width="@dimen/dp_margin_40"
+                android:layout_height="@dimen/dp_margin_20"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_margin_10"
+                android:layout_toLeftOf="@id/address_delete"
+                android:background="@drawable/address_item_bg"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="修改"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_10" />
+
+            <TextView
+                android:id="@+id/address_delete"
+                android:layout_width="@dimen/dp_margin_40"
+                android:layout_height="@dimen/dp_margin_20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_margin_10"
+                android:background="@drawable/address_item_bg"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="删除"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_10" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/register_dialog_photograph"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_margin_50"
+        android:gravity="center"
+        android:text="拍摄"
+        android:textColor="@color/color666"
+        android:textSize="@dimen/text_20" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_1"
+        android:background="@color/colorf2f" />
+
+    <TextView
+        android:id="@+id/register_dialog_album"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_margin_50"
+        android:gravity="center"
+        android:text="相册"
+        android:textColor="@color/color666"
+        android:textSize="@dimen/text_20" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_margin_10"
+        android:background="@color/colorf2f" />
+
+    <TextView
+        android:id="@+id/register_dialog_cannel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_margin_50"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/color666"
+        android:textSize="@dimen/text_20" />
+
+</LinearLayout>

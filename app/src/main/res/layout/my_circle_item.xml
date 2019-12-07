@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/circle_check"
+        android:layout_width="@dimen/dp_margin_20"
+        android:layout_height="@dimen/dp_margin_20"
+        android:layout_marginLeft="@dimen/dp_margin_10"
+        android:layout_marginTop="@dimen/dp_margin_10"
+        android:background="@drawable/shop_car_cricle"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_margin_10"
+        android:layout_marginLeft="@dimen/dp_margin_5"
+        android:layout_marginRight="@dimen/dp_margin_10"
+        android:layout_toRightOf="@+id/circle_check"
+        android:background="@drawable/index_item_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_margin_10"
+        android:paddingBottom="@dimen/dp_margin_10"
+        android:paddingTop="@dimen/dp_margin_10">
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_margin_10"
+            android:textColor="@color/color666"
+            android:textSize="@dimen/sp_text_12" />
+
+        <LinearLayout
+            android:id="@+id/layout_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_margin_10"
+            />
+
+        <RelativeLayout
+            android:id="@+id/layout_zan_my"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_margin_50">
+
+            <TextView
+                android:id="@+id/circle_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_10" />
+
+            <ImageView
+                android:id="@+id/iv_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_margin_10"
+                android:layout_toLeftOf="@id/tv_zan_num"
+                android:src="@drawable/zan_no" />
+
+            <TextView
+                android:id="@+id/tv_zan_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_margin_10"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_12" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

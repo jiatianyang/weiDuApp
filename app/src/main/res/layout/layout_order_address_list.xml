@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_100"
+        android:layout_marginLeft="@dimen/dp_margin_10"
+        android:layout_marginTop="@dimen/dp_margin_10"
+        android:layout_toLeftOf="@+id/layout_selected"
+        android:background="@drawable/index_item_bg">
+
+        <RelativeLayout
+            android:id="@+id/layout_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_margin_10">
+
+            <TextView
+                android:id="@+id/order_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_14" />
+
+            <TextView
+                android:id="@+id/order_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_12" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/order_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_head"
+            android:layout_marginLeft="@dimen/dp_margin_10"
+            android:layout_marginRight="@dimen/dp_margin_10"
+            android:layout_marginBottom="@dimen/dp_margin_10" />
+
+        <ImageView
+            android:id="@+id/address_down"
+            android:layout_width="@dimen/dp_margin_40"
+            android:layout_height="@dimen/dp_margin_40"
+            android:layout_below="@+id/order_address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_margin_10"
+            android:layout_marginBottom="@dimen/dp_margin_10"
+            android:src="@drawable/address_down" />
+
+        <View
+            android:id="@+id/order_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_1"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorf2f"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_selected"
+        android:layout_width="@dimen/dp_margin_50"
+        android:layout_height="@dimen/layout_79"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_margin_10"
+        android:background="@color/color757"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="@dimen/layout_1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_margin_5"
+            android:layout_marginBottom="@dimen/dp_margin_5"
+            android:background="@color/colorf2f" />
+
+        <TextView
+            android:id="@+id/layout_selected_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择"
+            android:textColor="@color/colorFF5F71" />
+    </RelativeLayout>
+
+</RelativeLayout>

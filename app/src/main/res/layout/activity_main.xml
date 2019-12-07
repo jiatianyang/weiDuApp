@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <com.ming.weidushop.view.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_bottom_shop" />
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/layout_shop_car"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_margin_50"
+            android:layout_marginBottom="@dimen/dp_margin_18_"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/layout_all"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_margin_10">
+
+                <ImageView
+                    android:id="@+id/iv_cricle"
+                    android:layout_width="@dimen/dp_margin_15"
+                    android:layout_height="@dimen/dp_margin_15"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/shop_car_cricle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_margin_10"
+                    android:layout_toRightOf="@+id/iv_cricle"
+                    android:text="全选"
+                    android:textColor="@color/color666"
+                    android:textSize="@dimen/sp_text_12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_margin_10"
+                android:layout_toRightOf="@+id/layout_all">
+
+                <TextView
+                    android:id="@+id/tv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="合计:"
+                    android:textColor="@color/color666"
+                    android:textSize="@dimen/sp_text_12" />
+
+                <TextView
+                    android:id="@+id/tv_all_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_margin_5"
+                    android:layout_toRightOf="@id/tv_add"
+                    android:text="¥0"
+                    android:textColor="@color/color_f06"
+                    android:textSize="@dimen/sp_text_12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/submit_order"
+                android:layout_width="@dimen/layout_100"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorFF5F71">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="去结算"
+                    android:textColor="@color/colorFFF"
+                    android:textSize="@dimen/sp_text_16" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.ming.weidushop.view.BottomTabView
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_60"
+            android:layout_below="@+id/layout_shop_car" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

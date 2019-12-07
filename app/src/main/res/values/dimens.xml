@@ -1,0 +1,47 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="layout_1">1dp</dimen>
+    <dimen name="layout_5">5dp</dimen>
+
+    <dimen name="layout_8">10dp</dimen>
+    <dimen name="layout_10">10dp</dimen>
+
+    <dimen name="layout_20">20dp</dimen>
+    <dimen name="layout_24">24dp</dimen>
+    <dimen name="layout_26">26dp</dimen>
+    <dimen name="layout_30">30dp</dimen>
+    <dimen name="layout_36">36dp</dimen>
+    <dimen name="layout_40">40dp</dimen>
+    <dimen name="layout_50">50dp</dimen>
+    <dimen name="layout_60">60dp</dimen>
+    <dimen name="layout_70">70dp</dimen>
+    <dimen name="layout_79">79dp</dimen>
+    <dimen name="layout_80">80dp</dimen>
+    <dimen name="layout_85">85dp</dimen>
+    <dimen name="layout_97">97dp</dimen>
+    <dimen name="layout_98">98dp</dimen>
+    <dimen name="layout_99">99dp</dimen>
+    <dimen name="layout_100">100dp</dimen>
+    <dimen name="layout_110">110dp</dimen>
+    <dimen name="layout_102">102dp</dimen>
+    <dimen name="layout_105">105dp</dimen>
+    <dimen name="layout_120">120dp</dimen>
+    <dimen name="layout_130">130dp</dimen>
+    <dimen name="layout_140">140dp</dimen>
+    <dimen name="layout_142">142dp</dimen>
+    <dimen name="layout_150">150dp</dimen>
+    <dimen name="layout_160">160dp</dimen>
+    <dimen name="layout_165">165dp</dimen>
+    <dimen name="layout_166">166dp</dimen>
+    <dimen name="layout_170">170dp</dimen>
+    <dimen name="layout_260">260dp</dimen>
+    <dimen name="layout_200">200dp</dimen>
+    <dimen name="layout_500">500dp</dimen>
+
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_10">10sp</dimen>
+</resources>

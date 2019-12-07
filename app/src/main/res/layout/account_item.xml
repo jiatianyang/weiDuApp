@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_margin_50">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/account_image"
+            android:layout_width="@dimen/layout_30"
+            android:layout_height="@dimen/layout_30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_margin_20" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_margin_10"
+            android:layout_marginRight="@dimen/dp_margin_10"
+            android:layout_toRightOf="@id/account_image">
+
+            <TextView
+                android:id="@+id/account_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorede" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

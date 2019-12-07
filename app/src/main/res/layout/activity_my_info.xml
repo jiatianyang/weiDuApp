@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_margin_20"
+        android:background="@drawable/index_item_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_margin_20"
+        android:paddingRight="@dimen/dp_margin_20">
+
+        <RelativeLayout
+            android:id="@+id/layout_pictrue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_margin_50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="我的头像"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_14" />
+
+            <ImageView
+                android:id="@+id/info_pic"
+                android:layout_width="@dimen/layout_30"
+                android:layout_height="@dimen/layout_30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorede" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_click_nick"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_margin_50"
+            android:layout_marginBottom="@dimen/dp_margin_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="我的昵称"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_14" />
+
+            <TextView
+                android:id="@+id/info_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color999"
+                android:textSize="@dimen/sp_text_12" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorede" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_info"
+        android:layout_marginLeft="@dimen/dp_margin_20"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/dp_margin_20"
+        android:background="@drawable/shop_car_bg"
+        android:text="退出登录"
+        android:textColor="@color/colorFFF"
+        android:textSize="@dimen/sp_text_14" />
+
+    <RelativeLayout
+        android:id="@+id/layout_change_nick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent60"
+        android:visibility="gone">
+
+        <!--修改昵称-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_margin_10"
+            android:layout_marginRight="@dimen/dp_margin_10"
+            android:background="@drawable/index_item_bg"
+            android:paddingTop="@dimen/dp_margin_10">
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="@dimen/dp_margin_20"
+                android:layout_height="@dimen/dp_margin_20"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_margin_10"
+                android:src="@drawable/comment_cancle" />
+
+            <EditText
+                android:id="@+id/et_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_margin_50"
+                android:layout_below="@id/iv_delete"
+                android:layout_margin="@dimen/dp_margin_10"
+                android:background="@drawable/index_item_bg"
+                android:paddingLeft="@dimen/dp_margin_5"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_14" />
+
+            <Button
+                android:id="@+id/change_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_user_name"
+                android:layout_marginLeft="@dimen/dp_margin_10"
+                android:layout_marginTop="@dimen/layout_20"
+                android:layout_marginRight="@dimen/dp_margin_10"
+                android:layout_marginBottom="@dimen/dp_margin_20"
+                android:background="@drawable/shop_car_bg"
+                android:text="修改昵称"
+                android:textColor="@color/colorFFF"
+                android:textSize="@dimen/sp_text_14"
+
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/order_head"
+                layout="@layout/layout_order_address_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_margin_10"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/layout_add_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_margin_50"
+                android:layout_marginLeft="@dimen/dp_margin_10"
+                android:layout_marginTop="@dimen/dp_margin_10"
+                android:layout_marginRight="@dimen/dp_margin_10"
+                android:background="@drawable/index_item_bg"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="暂无收货地址，点击添加"
+                    android:textColor="@color/colorFF5F71" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/order_rexycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_110"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/order_rexycler_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_margin_50" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_margin_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorFFF">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_1"
+            android:background="@color/colorede" />
+
+        <TextView
+            android:id="@+id/tv_order_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_margin_10"
+            android:textSize="@dimen/sp_text_14" />
+
+        <RelativeLayout
+            android:id="@+id/submit_order"
+            android:layout_width="@dimen/layout_100"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorFF5F71">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="提交订单"
+                android:textColor="@color/colorFFF"
+                android:textSize="@dimen/sp_text_16" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

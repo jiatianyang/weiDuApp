@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_margin_10"
+        android:layout_marginTop="@dimen/dp_margin_10"
+        android:layout_marginRight="@dimen/dp_margin_10"
+        android:background="@drawable/index_item_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_margin_40"
+            android:paddingLeft="@dimen/dp_margin_10">
+
+            <TextView
+                android:id="@+id/order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_12"
+
+                />
+
+            <TextView
+                android:id="@+id/order_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_margin_10"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_12" />
+
+            <ImageView
+                android:id="@+id/order_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_margin_10"
+                android:padding="@dimen/dp_margin_5"
+                android:src="@drawable/order_more"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/order_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_margin_40" />
+
+        <RelativeLayout
+            android:id="@+id/layout_pj_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_recycler"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_pj_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_margin_10"
+                android:layout_marginBottom="@dimen/dp_margin_10"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_12"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/order_wait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_recycler"
+            android:layout_marginTop="@dimen/dp_margin_5"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_margin_60">
+
+                <TextView
+                    android:id="@+id/tv_order_com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_margin_10"
+                    android:textColor="@color/color666"
+                    android:textSize="@dimen/sp_text_12" />
+
+                <TextView
+                    android:id="@+id/tv_order_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_order_com"
+                    android:layout_marginLeft="@dimen/dp_margin_10"
+                    android:layout_marginTop="@dimen/dp_margin_10"
+                    android:layout_marginBottom="@dimen/dp_margin_10"
+                    android:textColor="@color/color666"
+                    android:textSize="@dimen/sp_text_12" />
+
+                <TextView
+                    android:id="@+id/order_pay"
+                    android:layout_width="@dimen/dp_margin_70"
+                    android:layout_height="@dimen/dp_margin_30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_margin_10"
+                    android:background="@drawable/order_all_selected"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_margin_5"
+                    android:paddingRight="@dimen/dp_margin_5"
+                    android:text="确认收货"
+                    android:textColor="@color/colorFFF"
+                    android:textSize="@dimen/sp_text_14" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/order_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_recycler"
+            android:layout_marginTop="@dimen/dp_margin_5">
+
+            <TextView
+                android:id="@+id/order_all_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_margin_10"
+                android:textColor="@color/color666"
+                android:textSize="@dimen/sp_text_14" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_margin_40"
+                android:layout_below="@id/order_all_money"
+                android:layout_marginTop="@dimen/dp_margin_10"
+                android:paddingLeft="@dimen/dp_margin_10"
+                android:paddingRight="@dimen/dp_margin_10">
+
+                <TextView
+                    android:id="@+id/order_cancle"
+                    android:layout_width="@dimen/dp_margin_70"
+                    android:layout_height="@dimen/dp_margin_30"
+                    android:background="@drawable/order_all_nomal"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_margin_5"
+                    android:paddingRight="@dimen/dp_margin_5"
+                    android:text="删除订单"
+                    android:textColor="@color/color666"
+                    android:textSize="@dimen/sp_text_14" />
+
+                <TextView
+                    android:id="@+id/order_submit"
+                    android:layout_width="@dimen/dp_margin_70"
+                    android:layout_height="@dimen/dp_margin_30"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/order_all_selected"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_margin_5"
+                    android:paddingRight="@dimen/dp_margin_5"
+                    android:text="去支付"
+                    android:textColor="@color/colorFFF"
+                    android:textSize="@dimen/sp_text_14" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_order_delete"
+            android:layout_width="@dimen/dp_margin_50"
+            android:layout_height="@dimen/dp_margin_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_margin_30"
+            android:layout_marginRight="@dimen/dp_margin_5"
+            android:background="@drawable/order_all_selected"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/colorFFF"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

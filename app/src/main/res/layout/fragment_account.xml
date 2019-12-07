@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/simple_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/account_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/layout_142"
+        android:background="@drawable/account_item_bg">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/account_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_bottom"
+            android:layout_centerHorizontal="true"
+            android:text="©八维移动通信学院学生实训作品"
+            android:textColor="@color/color666"
+            android:textSize="@dimen/sp_text_14" />
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_margin_20"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/layout_102">
+
+        <ImageView
+            android:id="@+id/account_picture"
+            android:layout_width="@dimen/layout_80"
+            android:layout_height="@dimen/layout_80"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/account_logo" />
+
+        <TextView
+            android:id="@+id/account_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_picture"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_margin_10"
+            android:text="请先登录"
+            android:textColor="@color/color666"
+            android:textSize="@dimen/sp_text_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_margin_10"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorFFF" />
+</RelativeLayout>
